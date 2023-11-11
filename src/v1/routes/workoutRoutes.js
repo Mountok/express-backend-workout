@@ -4,12 +4,12 @@ const router = express.Router();
 
 router.get('/', workoutController.getAllWorkouts)
 
-router.get('/:workoutID', workoutController.getOneWorkout)
+router.get('/:workoutId', workoutController.getOneWorkout)
 
 router.post('/', workoutController.createNewWorkout)
 
-router.patch('/:workoutID', workoutController.updateOneWorkout)
+router.patch('/:workoutId', workoutController.updateOneWorkout)
 
-router.delete('/:workoutID', workoutController.deleteOneWorkout)
+router.delete('/:workoutId', workoutController.deleteOneWorkout)
 
 module.exports = router
